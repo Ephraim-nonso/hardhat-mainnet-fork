@@ -35,6 +35,11 @@ const config: HardhatUserConfig = {
         url: "https://speedy-nodes-nyc.moralis.io/cd38a1bba9d69a2115198ff0/bsc/mainnet/archive",
       },
     },
+    rinkeby: {
+      url: process.env.RINKEBY_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
