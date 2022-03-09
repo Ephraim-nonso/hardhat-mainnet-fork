@@ -32,7 +32,7 @@ const config: HardhatUserConfig = {
     },
     hardhat: {
       forking: {
-        url: "https://speedy-nodes-nyc.moralis.io/cd38a1bba9d69a2115198ff0/eth/mainnet",
+        url: "https://speedy-nodes-nyc.moralis.io/cd38a1bba9d69a2115198ff0/bsc/mainnet/archive",
       },
     },
   },
